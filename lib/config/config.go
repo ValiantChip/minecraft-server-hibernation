@@ -128,10 +128,6 @@ func (c *Configuration) BuildCommandStartServer() ([]string, *errco.MshLog) {
 		}
 	}
 
-	if len(command) < 2 {
-		return command, errco.NewLog(errco.TYPE_ERR, errco.LVL_1, errco.ERROR_INVALID_COMMAND, "generated command to start minecraft server is invalid")
-	}
-
 	return command, nil
 }
 
