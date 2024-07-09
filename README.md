@@ -112,6 +112,11 @@ TimeBeforeStoppingEmptyServer sets the time (after the last player disconnected)
 "TimeBeforeStoppingEmptyServer": 30
 ```
 
+TimeBeforeTcpConnectionTimeout sets the time before a tcp connection times out
+```yaml
+"TimeBeforeTcpConnectionTimeout":10
+```
+
 SuspendAllow enables msh to suspend minecraft server process when there are no players online  
 _To mitigate ram usage you can set a high swappiness (on linux)_  
 - pro:  player wait time to join frozen server is ~0  

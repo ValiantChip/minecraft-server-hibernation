@@ -15,22 +15,23 @@ type Configuration struct {
 		StopServerAllowKill int    `json:"StopServerAllowKill"`
 	} `json:"Commands"`
 	Msh struct {
-		Debug                         int      `json:"Debug"`
-		ID                            string   `json:"ID"`
-		MshPort                       int      `json:"MshPort"`
-		MshPortQuery                  int      `json:"MshPortQuery"`
-		EnableQuery                   bool     `json:"EnableQuery"`
-		TimeBeforeStoppingEmptyServer int64    `json:"TimeBeforeStoppingEmptyServer"`
-		SuspendAllow                  bool     `json:"SuspendAllow"`   // specify if msh should suspend java server process
-		SuspendRefresh                int      `json:"SuspendRefresh"` // specify if msh should refresh java server process suspension and every how many seconds
-		InfoHibernation               string   `json:"InfoHibernation"`
-		InfoStarting                  string   `json:"InfoStarting"`
-		NotifyUpdate                  bool     `json:"NotifyUpdate"`
-		NotifyMessage                 bool     `json:"NotifyMessage"`
-		Whitelist                     []string `json:"Whitelist"`
-		WhitelistImport               bool     `json:"WhitelistImport"`
-		ShowResourceUsage             bool     `json:"ShowResourceUsage"`
-		ShowInternetUsage             bool     `json:"ShowInternetUsage"`
+		Debug                          int      `json:"Debug"`
+		ID                             string   `json:"ID"`
+		MshPort                        int      `json:"MshPort"`
+		MshPortQuery                   int      `json:"MshPortQuery"`
+		EnableQuery                    bool     `json:"EnableQuery"`
+		TimeBeforeStoppingEmptyServer  int64    `json:"TimeBeforeStoppingEmptyServer"`
+		TimeBeforeTcpConnectionTimeout int64    `json:"TimeBeforeTcpConnectionTimeout"`
+		SuspendAllow                   bool     `json:"SuspendAllow"`   // specify if msh should suspend java server process
+		SuspendRefresh                 int      `json:"SuspendRefresh"` // specify if msh should refresh java server process suspension and every how many seconds
+		InfoHibernation                string   `json:"InfoHibernation"`
+		InfoStarting                   string   `json:"InfoStarting"`
+		NotifyUpdate                   bool     `json:"NotifyUpdate"`
+		NotifyMessage                  bool     `json:"NotifyMessage"`
+		Whitelist                      []string `json:"Whitelist"`
+		WhitelistImport                bool     `json:"WhitelistImport"`
+		ShowResourceUsage              bool     `json:"ShowResourceUsage"`
+		ShowInternetUsage              bool     `json:"ShowInternetUsage"`
 	} `json:"Msh"`
 }
 
